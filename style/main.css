@@ -20,7 +20,7 @@ body {
   width: 100vw;
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
+  justify-content: center;
   align-items: center;
 }
 p {
@@ -142,6 +142,13 @@ section p.description {
   background-color: #cdd8e3;
   border-radius: 50px;
 }
+#share-btn-desktop {
+  display: none;
+}
+
+#share-card-desktop {
+  display: none;
+}
 
 .attribution {
   margin-top: 2rem;
@@ -152,7 +159,7 @@ section p.description {
   text-decoration: none;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1300px) {
   body {
     height: 100vh;
     display: flex;
@@ -194,5 +201,40 @@ section p.description {
 
   .attribution {
     margin-top: 8rem;
+  }
+
+  .card {
+    margin-bottom: 2em;
+  }
+
+  #share-btn {
+    display: none;
+  }
+  #share-btn-desktop {
+    display: block;
+  }
+
+  .show-share-card-desktop {
+    display: flex;
+  }
+
+  .share-card {
+    border-radius: 1rem !important ;
+    width: 16em;
+    position: absolute;
+    top: 37em;
+    left: 75em;
+  }
+
+  .share-card::before {
+    content: "";
+    height: 0;
+    width: 0;
+    border-width: 20px 20px 20px 20px;
+    border-color: #48556a transparent transparent transparent;
+    border-style: solid;
+    top: 4em;
+    left: 7em;
+    position: absolute;
   }
 }
