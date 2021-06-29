@@ -168,7 +168,7 @@ section p.description {
   }
   .container {
     display: flex;
-    height: 406.6px;
+    height: 40vh;
   }
 
   header img {
